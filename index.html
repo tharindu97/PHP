@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="header">
+		<h1>Trip to Jaffna</h1>
+		<p>BSc(Hons) Software Engineering | University of Kelaniya | 2022</p>
+		<div class="icons">
+			<i class="fa fa-square" onclick="full()"></i>
+			<i class="fa fa-th-large" onclick="twoColumn()"></i>
+			<i class="fa fa-th" onclick="fourColumn()"></i>
+		</div>
+	</div>
+
+	<div class="row">
+		<div id="column1">
+			<img src="1.jpg">
+			<img src="2.jpg">
+			<img src="3.jpg">
+			<img src="4.jpg">
+			<img src="5.jpg">
+			<img src="6.jpg">
+			<img src="7.jpg">
+			<img src="8.jpg">
+			<img src="9.jpg">
+			<img src="10.jpg">
+		</div>
+
+		<div id="column2">
+			<img src="11.jpg">
+			<img src="12.jpg">
+			<img src="13.jpg">
+			<img src="14.jpg">
+			<img src="15.jpg">
+			<img src="16.jpg">
+			<img src="17.jpg">
+			<img src="18.jpg">
+			<img src="19.jpg">
+			<img src="20.jpg">
+		</div>
+
+		<div id="column3">
+			<img src="21.jpg">
+			<img src="22.jpg">
+			<img src="23.jpg">
+			<img src="24.jpg">
+			<img src="25.jpg">
+			<img src="26.jpg">
+			<img src="27.jpg">
+			<img src="28.jpg">
+			<img src="29.jpg">
+			<img src="30.jpg">
+		</div>
+
+		<div id="column4">
+			<img src="31.jpg">
+			<img src="32.jpg">
+			<img src="33.jpg">
+			<img src="34.jpg">
+			<img src="35.jpg">
+			<img src="36.jpg">
+			<img src="37.jpg">
+			<img src="38.jpg">
+			<img src="39.jpg">
+			<img src="40.jpg">
+		</div>
+	</div>
+
+	<script>
+		function full(){
+			document.getElementById('column1').style.width = '100%';
+			document.getElementById('column2').style.width = '100%';
+			document.getElementById('column3').style.width = '100%';
+			document.getElementById('column4').style.width = '100%';
+		}
+
+		function twoColumn(){
+			document.getElementById('column1').style.width = '50%';
+			document.getElementById('column2').style.width = '50%';
+			document.getElementById('column3').style.width = '50%';
+			document.getElementById('column4').style.width = '50%';
+		}
+
+		function fourColumn(){
+			document.getElementById('column1').style.width = '25%';
+			document.getElementById('column2').style.width = '25%';
+			document.getElementById('column3').style.width = '25%';
+			document.getElementById('column4').style.width = '25%';
+		}
+	</script>
+</body>
+</html>

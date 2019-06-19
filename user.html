@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="user.css">
+</head>
+<body>
+	<div class="signup-form">
+	<form action="dbConnect.php" method="post">
+		<div class="form-header">
+			<h2>Sign Up</h2>
+			<p>Fill out this form and start Your gallery.</p>
+		</div>
+		<div class="form-group">
+			<label>Username</label>
+			<input type="text" class="form-control" name="name" placeholder="Yourname" autocomplete="off" required>
+		</div>
+		<div class="form-group">
+			<label>Password</label>
+			<input type="password" class="form-control" name="password" placeholder="password" autocomplete="off" required>
+		</div>
+		<div class="form-group">
+			<label>Email Address</label>
+			<input type="email" class="form-control" name="email" placeholder="someone@site.com" autocomplete="off" required>
+		</div>
+		<div class="form-group">
+			<button type="submit" class="btn btn-primary btn-block btn-lg" name="submit">Sign Up</button>
+		</div>
+	</form>
+	<div class="text-center small" style="color: #674288;">Already have an account? <a href="singin.html">signin here</a></div>
+	<?php include("dbConnect.php"); ?>
+</body>
+</html>
