@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+	<form action="display.php" method="post">
+		<table class="container">
+			<tr>
+				<th><label>Enter Title:</label></th>
+				<th><input type="text" name="title"></th>
+			</tr>
+			<tr>
+				<th><label>No Of Colomus:</label></th>
+				<th><input type="text" name="colomu"></th>
+			</tr>
+			<tr>
+				<th><label>No Of Rows:</label></th>
+				<th><input type="text" name="row"></th>
+			</tr>
+		</table>
+		<div class="button">
+			<input type="submit" name="submit" value="SUBMIT">
+		</div>
+		
+	</form>
+	<?php include("display.php"); ?>
+		
+	
+</body>
+</html>
