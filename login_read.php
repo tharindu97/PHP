@@ -1,24 +1,6 @@
-<?php 
-	
-		$connection = mysqli_connect('localhost', 'root', '', 'loginapp');
-
-		if($connection){
-			echo "We are connect";
-		}else{
-			die("Not connect");
-		}
-
-		$query = "SELECT * FROM users";
-
-		$result = mysqli_query($connection, $query);
-
-		if(!$result){
-			die("Query FAIELD".mysqli_error());
-		}
-
-
-	
- ?>
+<?php include "db.php";?>
+<?php include "functions.php";?>
+<?php Read(); ?>
 <!DOCTYPE html>
 <html>
 <head>
